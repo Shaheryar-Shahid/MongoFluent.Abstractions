@@ -38,13 +38,16 @@ await studentRepo.UpdateOneAsync(q => q.Eq(s => s.Id, 1), new Dictionary<string,
 // Delete a student
 await studentRepo.DeleteOneAsync(q => q.Eq(s => s.Id, 1));
 ```
-
 ## Example Implementation
-See the [examples](./MongoFluent.Abstractions/Examples/) folder for a complete implementation, including:
-- `Model/Student.cs`: Example entity
-- `Repository/MongoRepository.cs`: Repository implementation
-- `Database/MongoDbContext.cs`: MongoDB context setup
-- `Interfaces/Repository/IRepository.cs`: Repository interface
+A complete example implementation is available in the dedicated `MongoFluent.Abstractions.Examples` project.  
+This project includes:
+- Example entity (`Model/Student.cs`)
+- Repository implementation (`Repository/MongoRepository.cs`)
+- MongoDB context setup (`Database/MongoDbContext.cs`)
+- Repository interface (`Interfaces/Repository/IRepository.cs`)
+
+Refer to the `MongoFluent.Abstractions.Examples` project for usage and integration details.
+
 
 ## License
 MIT
