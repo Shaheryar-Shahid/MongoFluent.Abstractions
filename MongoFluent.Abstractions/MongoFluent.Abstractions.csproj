@@ -5,10 +5,12 @@
 		<PackageId>MongoFluent.Abstractions</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Shaheryar.Shahid</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Abstraction layer over MongoDB.Driver with .NET-friendly query, projection, and repository patterns.</Description>
 		<RepositoryUrl>https://github.com/Shaheryar-Shahid/MongoFluent.Abstractions</RepositoryUrl>
 	</PropertyGroup>
 	<ItemGroup>
 	  <PackageReference Include="MongoDB.Driver" Version="3.4.2" />
+	<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
