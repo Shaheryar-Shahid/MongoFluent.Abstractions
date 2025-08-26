@@ -1,10 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<PackageId>Shaheryar.Shahid.MongoFluent.Abstractions</PackageId>
-	<Version>1.0.0</Version>
-	<Authors>Shaheryar.Shahid</Authors>
-	<Description>Abstraction layer over MongoDB.Driver with .NET-friendly query, projection, and repository patterns.</Description>
-	<RepositoryUrl>https://git.company.com/mongowrapper</RepositoryUrl>
-
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>MongoFluent.Abstractions</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Shaheryar.Shahid</Authors>
+		<Description>Abstraction layer over MongoDB.Driver with .NET-friendly query, projection, and repository patterns.</Description>
+		<RepositoryUrl>https://github.com/Shaheryar-Shahid/MongoFluent.Abstractions</RepositoryUrl>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="MongoDB.Driver" Version="3.4.2" />
+	</ItemGroup>
 </Project>
